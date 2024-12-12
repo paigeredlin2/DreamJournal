@@ -1,0 +1,27 @@
+.outerPost {
+  background-color: #9f4945;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 200px;
+}
+.innerPost {
+  background-color: #f1eee4;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #220b31;
+  overflow: scroll;
+}
+.userPostName {
+  margin: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #220b31;
+}
+.date {
+  font-family: Cherry Bomb One;
+}
+@media screen and (min-width: 450px) {
+  .outerPost {
+    width: 300px;
+  }
+}

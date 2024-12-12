@@ -1,0 +1,86 @@
+@keyframes slide-in {
+  from {
+    translate: 0 100vh;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+.home {
+  animation: 4s slide-in;
+  background-color: #250c35;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 10px;
+}
+.innerHome {
+  background-color: rgba(133, 54, 83, 0.8);
+  border: 2px solid #6387c1;
+  padding: 0.25rem;
+  color: #f1eee4;
+  text-align: center;
+}
+.titleStatement {
+  text-align: center;
+  font-family: Cherry Bomb One;
+  font-size: 2.8rem;
+}
+.cloudsGroup {
+  display: none;
+}
+
+@media screen and (min-width: 830px) {
+  .cloudsGroup {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cloudsGroup img {
+    height: 155px;
+    margin: 0 -2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home {
+    margin: 1rem 4rem;
+  }
+  .cloudsGroup img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .home {
+    margin: 1.35rem 6rem;
+  }
+  .cloudsGroup img {
+    height: 210px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .home {
+    margin: 1.75rem 8rem;
+  }
+  .innerHome {
+    padding: 1rem 3rem;
+  }
+  .innerHome h2 {
+    font-size: 1.75rem;
+  }
+  .cloudsGroup img {
+    height: 250px;
+  }
+}
+.cloudimg1,
+.cloudimg3 {
+  animation: 5s infinite alternate bounce;
+}
+.cloudimg2 {
+  animation: 3s infinite alternate bounce;
+}
+@keyframes bounce {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 -25px;
+  }
+}

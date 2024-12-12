@@ -1,0 +1,19 @@
+@keyframes slide-up {
+  from {
+    translate: 0 100vh;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+.errorBody {
+  background-color: #f1eee4;
+  height: 40vh;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5rem;
+  font-family: Cherry Bomb One;
+  animation: 2s slide-up;
+}

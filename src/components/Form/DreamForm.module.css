@@ -1,0 +1,70 @@
+@keyframes slide-in {
+  from {
+    translate: 100vw 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+.writeIntro {
+  color: #f1eee4;
+  text-align: center;
+  background-color: rgba(133, 54, 83, 0.5);
+  padding: 0.8rem 0;
+  border: 2px solid #f1eee4;
+}
+.innerDreamForm {
+  border: 5px solid #6387c1;
+  background-color: #f1eee4;
+  margin: 0;
+}
+.dreamForm {
+  padding: 0.5rem 0.5rem;
+}
+.dreamForm p {
+  text-align: center;
+}
+.dreamForm label {
+  display: block;
+  font-family: Cherry Bomb One;
+  font-size: larger;
+  color: #9f4945;
+}
+.dreamForm input {
+  font-family: "Times New Roman", Times, serif;
+  width: 95%;
+  padding: 0.25rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.dreamForm textarea {
+  width: 95%;
+  padding: 0.25rem;
+  font-family: "Times New Roman", Times, serif;
+  height: 100px;
+}
+.dreamForm button {
+  border: 0;
+  color: #f1eee4;
+  padding: 0.5rem;
+  font-family: Cherry Bomb One;
+  font-size: larger;
+  border-radius: 10px;
+  background-color: #a57848;
+}
+@media screen and (min-width: 350px) {
+  .outerDreamForm {
+    margin: 0 2rem;
+    animation: 3s slide-in;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .outerDreamForm {
+    margin: 1rem 4rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .outerDreamForm {
+    margin: 1.5rem 6rem;
+  }
+}
