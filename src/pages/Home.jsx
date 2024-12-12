@@ -1,4 +1,7 @@
 import classes from "./Home.module.css";
+import cloud1 from "../assets/Cloud1.png";
+import cloud2 from "../assets/Cloud4.png";
+import cloud3 from "../assets/Cloud4.png";
 
 const Home = () => {
   return (
@@ -11,21 +14,9 @@ const Home = () => {
           emotional processing.
         </h2>
         <div className={classes.cloudsGroup}>
-          <img
-            src="src\assets\Cloud3.png"
-            className={classes.cloudimg1}
-            alt="cloud"
-          />
-          <img
-            src="src\assets\Cloud4.png"
-            className={classes.cloudimg2}
-            alt="cloud"
-          />
-          <img
-            src="src\assets\Cloud1.png"
-            className={classes.cloudimg3}
-            alt="cloud"
-          />
+          <img src={cloud1} className={classes.cloudimg1} alt="cloud" />
+          <img src={cloud2} className={classes.cloudimg2} alt="cloud" />
+          <img src={cloud3} className={classes.cloudimg3} alt="cloud" />
         </div>
       </div>
     </div>

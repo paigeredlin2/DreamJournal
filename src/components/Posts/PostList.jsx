@@ -1,4 +1,8 @@
 import classes from "./PostList.module.css";
+import cloud1 from "../../assets/Cloud1.png";
+import cloud3 from "../../assets/Cloud4.png";
+import cloud4 from "../../assets/Cloud4.png";
+
 import Post from "./Post";
 const PostList = (props) => {
   const dreamList = props.listOfDreams;
@@ -23,29 +27,13 @@ const PostList = (props) => {
 
       <ul className={classes.innerPostList}>
         <div className={classes.cloudGroup}>
-          <img
-            src="src\assets\Cloud1.png"
-            alt="cloud"
-            className={classes.cloudimg2}
-          />
-          <img
-            src="src\assets\Cloud4.png"
-            alt="cloud"
-            className={classes.cloudimg1}
-          />
+          <img src={cloud1} alt="cloud" className={classes.cloudimg2} />
+          <img src={cloud4} alt="cloud" className={classes.cloudimg1} />
         </div>
         <div className={classes.postList}>{dreamPostList}</div>
         <div className={classes.cloudGroup}>
-          <img
-            src="src\assets\Cloud3.png"
-            alt="cloud"
-            className={classes.cloudimg1}
-          />
-          <img
-            src="src\assets\Cloud1.png"
-            alt="cloud"
-            className={classes.cloudimg2}
-          />
+          <img src={cloud3} alt="cloud" className={classes.cloudimg1} />
+          <img src={cloud1} alt="cloud" className={classes.cloudimg2} />
         </div>
       </ul>
     </div>

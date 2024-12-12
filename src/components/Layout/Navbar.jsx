@@ -1,21 +1,15 @@
 import classes from "./Navbar.module.css";
+import cloud1 from "../../assets/Cloud1.png";
+import cloud4 from "../../assets/Cloud4.png";
 
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
       <div className={classes.titleBackground}>
-        <img
-          src="src\assets\Cloud4.png"
-          alt="cloud"
-          className={classes.cloudimg}
-        />
+        <img src={cloud4} alt="cloud" className={classes.cloudimg} />
         <h1 className={classes.title}>dream journal</h1>
-        <img
-          src="src\assets\Cloud1.png"
-          alt="cloud"
-          className={classes.cloudimg}
-        />
+        <img src={cloud1} alt="cloud" className={classes.cloudimg} />
       </div>
       <nav>
         <ul className={classes.navbar}>
